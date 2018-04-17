@@ -1,0 +1,45 @@
+uuid: 8da13930-f030-46c0-a338-a70b95ee454a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.grid_block
+    - field.field.paragraph.section.field_body
+    - field.field.paragraph.section.field_image
+    - field.field.paragraph.section.field_subtitle
+    - field.field.paragraph.section.field_title
+    - paragraphs.paragraphs_type.section
+  module:
+    - image
+    - text
+id: paragraph.section.grid_block
+targetEntityType: paragraph
+bundle: section
+mode: grid_block
+content:
+  field_body:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_subtitle: true

@@ -10,18 +10,19 @@ dependencies:
     - paragraphs.paragraphs_type.section
   module:
     - image
+    - text
 id: paragraph.section.splash_banner
 targetEntityType: paragraph
 bundle: section
 mode: splash_banner
 content:
   field_body:
+    type: text_default
     weight: 2
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: content
   field_image:
     weight: 1
     label: hidden

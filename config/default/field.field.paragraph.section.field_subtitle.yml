@@ -1,0 +1,21 @@
+uuid: 4121c671-55fa-48bf-82ca-1a86c712ac91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.section
+  module:
+    - text
+id: paragraph.section.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: section
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
