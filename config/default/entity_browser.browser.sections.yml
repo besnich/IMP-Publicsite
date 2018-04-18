@@ -2,8 +2,11 @@ uuid: d7b8d8ae-659e-42dd-8330-f091404478dd
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.paragraphs
   module:
     - entity_browser_entity_form
+    - views
 name: sections
 label: Sections
 display: iframe
@@ -29,3 +32,13 @@ widgets:
     weight: -9
     label: Create
     id: entity_form
+  fd4477b7-2832-4b70-a59a-c20a295c73ac:
+    settings:
+      view: paragraphs
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: fd4477b7-2832-4b70-a59a-c20a295c73ac
+    weight: 2
+    label: Select
+    id: view
