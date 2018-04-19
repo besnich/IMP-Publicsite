@@ -184,7 +184,7 @@ display:
             alter_text: true
             text: Edit
             make_link: true
-            path: '/paragraphs_edit/paragraph/{id}/paragraphs/{id}/edit'
+            path: '/paragraphs_edit/paragraph/{{id}}/paragraphs/{{id}}/edit'
             absolute: false
             external: false
             replace_spaces: false
